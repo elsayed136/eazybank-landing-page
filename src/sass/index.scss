@@ -1,0 +1,15 @@
+// 2. Vendors
+
+// 3. Base stuff
+@use './base';
+
+// 4. Layout-related sections
+@use './layout';
+
+// 5. Components
+@use './components';
+
+// 6. Page-specific styles
+@use './pages';
+
+// 7. Themes

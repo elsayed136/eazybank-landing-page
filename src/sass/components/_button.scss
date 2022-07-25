@@ -1,0 +1,30 @@
+@use '../abstracts' as u;
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: u.$fz-sm;
+    padding: 1.4rem 3.4rem;
+    border-radius: 10rem;
+    transition: all 0.3s;
+    position: relative;
+
+    // change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:active {
+    opacity: 0.75;
+  }
+
+  &--primary {
+    background-image: linear-gradient(to right, u.$limeGreen, u.$brightCyan);
+    color: u.$white !important;
+    font-weight: 700;
+  }
+}

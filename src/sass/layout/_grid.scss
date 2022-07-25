@@ -1,0 +1,21 @@
+@use '../abstracts' as u;
+
+.container {
+  max-width: calc(100% - 4.8rem);
+  min-height: inherit;
+  margin-inline: auto;
+  position: inherit;
+
+  @include u.breakpoint-up(md) {
+    max-width: map-get(u.$container-max-widths, md);
+  }
+  @include u.breakpoint-up(lg) {
+    max-width: map-get(u.$container-max-widths, lg);
+  }
+  @include u.breakpoint-up(xl) {
+    max-width: map-get(u.$container-max-widths, xl);
+  }
+  @include u.breakpoint-up(xxl) {
+    max-width: map-get(u.$container-max-widths, xxl);
+  }
+}
