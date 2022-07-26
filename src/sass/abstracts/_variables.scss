@@ -13,12 +13,17 @@ $white: hsl(0, 0%, 100%);
 
 $fz-sm: 1.4rem;
 $fz-md: 1.8rem;
+$fz-heading-primary-md: 3rem;
+$fz-heading-primary-lg: 5rem;
+
 $fm-PublicSans: 'Public Sans', sans-serif;
 
+$grid__cols: 12;
+
 $container-max-widths: (
-  sm: 54rem,
-  md: 72rem,
-  lg: 96rem,
-  xl: 114rem,
-  xxl: 132rem,
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
 );

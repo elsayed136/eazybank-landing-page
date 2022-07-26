@@ -4,6 +4,8 @@
   min-height: 8rem;
   background-color: u.$white;
   position: relative;
+  z-index: 99;
+
   @include u.breakpoint-down(lg) {
     min-height: 6.4rem;
   }
@@ -151,5 +153,6 @@
     background-image: linear-gradient(u.$darkBlue, transparent);
     visibility: hidden;
     opacity: 0;
+    z-index: 1;
   }
 }

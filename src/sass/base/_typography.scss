@@ -4,11 +4,39 @@ body {
   min-height: 100vh;
   line-height: 1.3;
   font-family: u.$fm-PublicSans;
-  font-size: u.$fz-md;
+  font-size: u.$fz-sm;
   font-weight: 300;
   color: u.$grayishBlue;
+  overflow-x: hidden;
 
   &.noscroll {
     overflow: hidden;
   }
+}
+
+P {
+  font-size: u.$fz-sm;
+  line-height: 1.5;
+  @include u.breakpoint-up(lg) {
+    font-size: u.$fz-md;
+  }
+}
+
+.heading-primary {
+  font-size: u.$fz-heading-primary-md;
+  font-weight: 300;
+  line-height: 1.2;
+  color: u.$darkBlue;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  @include u.breakpoint-up(lg) {
+    font-size: u.$fz-heading-primary-lg;
+    margin-bottom: 4.2rem;
+  }
+}
+
+.heading-secondary {
+}
+.heading-tertiary {
 }
