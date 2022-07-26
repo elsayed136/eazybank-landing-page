@@ -4,6 +4,7 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
     filename: 'js/[name].[contenthash].js',
     clean: true,
+    assetModuleFilename: '[name][ext]',
   },
   devtool: false,
 };

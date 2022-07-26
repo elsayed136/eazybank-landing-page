@@ -15,6 +15,7 @@ module.exports = {
       },
       {
         test: /\.(s[ac]|c)ss$/i,
+        exclude: /node_modules/,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
@@ -33,13 +34,10 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
-        use: {
-          loader: 'file-loader',
-          options: {
-            esModule: false,
-            name: '[name].[ext]',
-            outputPath: 'images',
-          },
+        type: 'asset/resource',
+        generator: {
+          publicPath: 'images/',
+          outputPath: 'images/',
         },
       },
     ],
