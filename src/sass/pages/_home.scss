@@ -146,6 +146,11 @@
     @include u.breakpoint-up(xl) {
       grid-template-columns: repeat(4, 1fr);
       row-gap: 0;
+      column-gap: 3.6rem;
+    }
+
+    @include u.breakpoint-up(xxl) {
+      column-gap: 4.2rem;
     }
   }
 }
