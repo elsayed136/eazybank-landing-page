@@ -91,7 +91,7 @@
   }
 
   &__text {
-    flex: 7;
+    flex: 6.2;
     z-index: 9;
 
     @include u.breakpoint-down(lg) {
@@ -115,6 +115,23 @@
 
   @include u.breakpoint-up(lg) {
     padding: 11rem 0;
+  }
+
+  .feature__intro {
+    width: 100%;
+
+    @include u.breakpoint-up(md) {
+      width: 75%;
+    }
+    @include u.breakpoint-up(lg) {
+      width: 70%;
+    }
+    @include u.breakpoint-up(xl) {
+      width: 60%;
+    }
+    @include u.breakpoint-up(xxl) {
+      width: 50%;
+    }
   }
 
   .features__grid {
