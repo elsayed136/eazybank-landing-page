@@ -43,7 +43,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    flex: 1;
+    flex: 10;
 
     @include u.breakpoint-down(lg) {
       left: 50%;
@@ -91,10 +91,44 @@
   }
 
   &__text {
-    flex: 1;
+    flex: 7;
     z-index: 9;
+
+    @include u.breakpoint-down(lg) {
+      margin-top: 3rem;
+    }
+
     p {
       margin-bottom: 4.2rem;
+    }
+  }
+}
+
+.section-features {
+  background-color: u.$lightGrayishBlue;
+  padding: 7rem 0;
+  text-align: center;
+
+  @include u.breakpoint-up(md) {
+    text-align: left;
+  }
+
+  @include u.breakpoint-up(lg) {
+    padding: 11rem 0;
+  }
+
+  .features__grid {
+    display: grid;
+    row-gap: 4rem;
+
+    @include u.breakpoint-up(md) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 5.2rem;
+    }
+
+    @include u.breakpoint-up(xl) {
+      grid-template-columns: repeat(4, 1fr);
+      row-gap: 0;
     }
   }
 }

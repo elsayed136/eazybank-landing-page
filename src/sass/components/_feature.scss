@@ -1,0 +1,18 @@
+@use '../abstracts' as u;
+
+.feature {
+  &__icon {
+    width: 7.2rem;
+    height: 7.2rem;
+    margin-inline: auto;
+    margin-bottom: 3rem;
+
+    @include u.breakpoint-up(md) {
+      margin-inline: unset;
+    }
+
+    @include u.breakpoint-up(lg) {
+      margin-bottom: 4.6rem;
+    }
+  }
+}

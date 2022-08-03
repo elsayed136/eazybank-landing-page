@@ -11,14 +11,22 @@ $white: hsl(0, 0%, 100%);
 
 // Fonts
 
-$fz-sm: 1.4rem;
-$fz-md: 1.8rem;
-$fz-heading-primary-md: 3rem;
-$fz-heading-primary-lg: 5rem;
+$fz-md: 1.4rem;
+$fz-lg: 1.8rem;
+$fz-heading-primary-md: 3.8rem;
+$fz-heading-primary-lg: 5.2rem;
+$fz-heading-secondary-md: 3.2rem;
+$fz-heading-secondary-lg: 5.2rem;
+$fz-heading-tertiary-md: 1.8rem;
+$fz-heading-tertiary-lg: 2.8rem;
 
 $fm-PublicSans: 'Public Sans', sans-serif;
 
 $grid__cols: 12;
+$grid__col-gap-md: 12;
+$grid__col-gap-lg: 12;
+$grid__row-gap-md: 6.2rem;
+$grid__row-gap-lg: 8rem;
 
 $container-max-widths: (
   sm: 540px,
