@@ -154,3 +154,23 @@
     }
   }
 }
+
+.section-articles {
+  background-color: u.$veryLightGray;
+  padding: 9.2rem 0;
+
+  .articles__grid {
+    display: grid;
+    row-gap: 2.4rem;
+
+    @include u.breakpoint-up(md) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 3rem;
+    }
+
+    @include u.breakpoint-up(xl) {
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 3rem;
+    }
+  }
+}

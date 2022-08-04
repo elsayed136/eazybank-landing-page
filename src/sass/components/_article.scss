@@ -1,0 +1,57 @@
+@use '../abstracts' as u;
+
+.article {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: u.$white;
+  box-shadow: 0 0 1.2rem rgba($color: u.$black, $alpha: 0.03);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.4s;
+
+  &:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 0 2.4rem rgba($color: u.$black, $alpha: 0.03);
+  }
+
+  &__img {
+    height: 20rem;
+    overflow: hidden;
+
+    img {
+      height: inherit;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    padding: 3.1rem 3.1rem 4.6rem;
+
+    @include u.breakpoint-up(xl) {
+      padding: 3.1rem 2.5rem 2.8rem;
+    }
+  }
+
+  &__author {
+    font-size: 1rem;
+  }
+
+  &__title {
+    color: u.$darkBlue;
+    font-size: 1.6rem;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

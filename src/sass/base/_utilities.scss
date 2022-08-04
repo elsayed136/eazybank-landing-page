@@ -40,6 +40,12 @@
 
 .center-text {
   text-align: center !important;
+
+  &--mobile {
+    @include u.breakpoint-down(md) {
+      text-align: center !important;
+    }
+  }
 }
 
 .margin-top-medium {
