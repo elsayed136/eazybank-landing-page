@@ -45,6 +45,11 @@
     color: u.$darkBlue;
     font-size: 1.6rem;
     font-weight: 400;
+    transition: all 0.3s;
+
+    &:hover {
+      color: u.$limeGreen;
+    }
   }
 
   &__description {
